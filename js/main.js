@@ -1,4 +1,5 @@
 let atackPlayer;
+let atackEnemy;
 function iniciarJuego() {
   let botonMascota = document.getElementById('boton-mascota');
   botonMascota.addEventListener('click', seleccionarMascotaJugador);
@@ -57,17 +58,31 @@ function seleccionarMascotaEnemigo() {
 function atackFire() {
   atackPlayer = 'Fuego';
   alert(atackPlayer);
+  atackEnemyRandom()
 }
 function atackWater() {
   atackPlayer = 'Agua';
   alert(atackPlayer);
+  atackEnemyRandom()
 }
 function atackGround() {
   atackPlayer = 'Tierra';
   alert(atackPlayer);
+  atackEnemyRandom()
 }
 
-
+function atackEnemyRandom() {
+  let atackRandom = aleatorio(1, 3);
+  if (atackRandom == 1) {
+    atackEnemy = 'Fuego';
+  }
+  else if (atackRandom == 2) {
+    atackEnemy = 'Agua';
+  }
+  else {
+    atackEnemy = 'Tierra';
+  }
+}
 
 function aleatorio(min, max) {
   return Math.floor(Math.random() * (max - min + 1) + min);
