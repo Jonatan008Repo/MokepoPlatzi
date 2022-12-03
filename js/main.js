@@ -9,19 +9,20 @@ function seleccionarMascotaJugador() {
   let inputLangostelvis = document.getElementById('langostelvis');
   let inputTucapalma = document.getElementById('tucapalma');
   let inputPydos = document.getElementById('pydos');
+  let spanPetPlayer = document.getElementById('pet-player');
 
   if (inputHipodoge.checked) {
-    console.log('Seleccionaste a Hipodoge    ')
+    spanPetPlayer.innerHTML = 'Hipodoge';
   } else if (inputCapipepo.checked) {
-    console.log('Seleccionaste a Capipepo    ')
+    spanPetPlayer.innerHTML = 'Capipepo';
   } else if (inputRatigueya.checked) {
-    console.log('Seleccionaste a Ratigueya   ')
+    spanPetPlayer.innerHTML = 'Ratigueya';
   } else if (inputLangostelvis.checked) {
-    console.log('Seleccionaste a Langostelvis')
+    spanPetPlayer.innerHTML = 'Langostel';
   } else if (inputTucapalma.checked) {
-    console.log('Seleccionaste a Tucapalma   ')
+    spanPetPlayer.innerHTML = 'Tucapalma';
   } else if (inputPydos.checked) {
-    console.log('Seleccionaste a Pydos    ')
+    spanPetPlayer.innerHTML = 'Pydos';
   } else {
     console.log('Selecciona una mascota')
   }
