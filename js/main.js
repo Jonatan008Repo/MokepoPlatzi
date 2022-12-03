@@ -5,9 +5,9 @@ function iniciarJuego() {
 function seleccionarMascotaJugador() {
   let inputHipodoge = document.getElementById('hipodoge');
   let inputCapipepo = document.getElementById('capipepo');
-  let inputRatigueya = document.getElementById('ratiguey');
-  let inputLangostelvis = document.getElementById('langoste');
-  let inputTucapalma = document.getElementById('tucapalm');
+  let inputRatigueya = document.getElementById('ratigueya');
+  let inputLangostelvis = document.getElementById('langostelvis');
+  let inputTucapalma = document.getElementById('tucapalma');
   let inputPydos = document.getElementById('pydos');
 
   if (inputHipodoge.checked) {
